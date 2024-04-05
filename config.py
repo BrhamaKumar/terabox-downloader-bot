@@ -5,7 +5,7 @@ BOT_TOKEN = "6382802673:AAHYOo5_SmdRZQR7sJsx-n3V6we12rTemKQ"  # bot token
 
 
 ## REDIS
-HOST = ""  # redis host uri
+HOST = "localhost"  # redis host uri
 PORT = 8080  # redis port
 PASSWORD = ""  # redis password
 
