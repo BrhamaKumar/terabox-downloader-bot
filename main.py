@@ -47,7 +47,9 @@ Hello! I am a bot to download videos from terabox.
 Send me the terabox link and I will start downloading it.
 Join @RoldexVerse For Updates
 [Source Code](https://github.com/r0ld3x/terabox-downloader-bot) """
-    
+    await m.reply(reply_text, link_preview=False, parse_mode="markdown")
+
+
 @bot.on(
     events.NewMessage(
         pattern="/start (.*)",
