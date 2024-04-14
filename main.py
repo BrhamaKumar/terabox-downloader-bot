@@ -47,17 +47,7 @@ Hello! I am a bot to download videos from terabox.
 Send me the terabox link and I will start downloading it.
 Join @RoldexVerse For Updates
 [Source Code](https://github.com/r0ld3x/terabox-downloader-bot) """
-    check_if = await is_user_on_chat(bot, "@RoldexVerse", m.peer_id)
-    if not check_if:
-        return await m.reply("Please join @RoldexVerse then send me the link again 1.")
-    check_if = await is_user_on_chat(bot, "@RoldexVerseChats", m.peer_id)
-    if not check_if:
-        return await m.reply(
-            "Please join @RoldexVerseChats then send me the link again 2."
-        )
-    await m.reply(reply_text, link_preview=False, parse_mode="markdown")
-
-
+    
 @bot.on(
     events.NewMessage(
         pattern="/start (.*)",
