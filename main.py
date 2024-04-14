@@ -49,11 +49,11 @@ Join @RoldexVerse For Updates
 [Source Code](https://github.com/r0ld3x/terabox-downloader-bot) """
     check_if = await is_user_on_chat(bot, "@RoldexVerse", m.peer_id)
     if not check_if:
-        return await m.reply("Please join @RoldexVerse then send me the link again.")
+        return await m.reply("Please join @RoldexVerse then send me the link again 1.")
     check_if = await is_user_on_chat(bot, "@RoldexVerseChats", m.peer_id)
     if not check_if:
         return await m.reply(
-            "Please join @RoldexVerseChats then send me the link again."
+            "Please join @RoldexVerseChats then send me the link again 2."
         )
     await m.reply(reply_text, link_preview=False, parse_mode="markdown")
 
@@ -71,11 +71,11 @@ async def start(m: UpdateNewMessage):
     fileid = db.get(str(text))
     check_if = await is_user_on_chat(bot, "@RoldexVerse", m.peer_id)
     if not check_if:
-        return await m.reply("Please join @RoldexVerse then send me the link again.")
+        return await m.reply("Please join @RoldexVerse then send me the link again 3.")
     check_if = await is_user_on_chat(bot, "@RoldexVerseChats", m.peer_id)
     if not check_if:
         return await m.reply(
-            "Please join @RoldexVerseChats then send me the link again."
+            "Please join @RoldexVerseChats then send me the link again 4."
         )
     await bot(
         ForwardMessagesRequest(
@@ -128,7 +128,7 @@ async def handle_message(m: Message):
         return await m.reply("Please enter a valid url.")
     check_if = await is_user_on_chat(bot, "@RoldexVerse", m.peer_id)
     if not check_if:
-        return await m.reply("Please join @RoldexVerse then send me the link again.")
+        return await m.reply("Please join @RoldexVerse then send me the link again 5.")
     check_if = await is_user_on_chat(bot, "@RoldexVerseChats", m.peer_id)
     if not check_if:
         return await m.reply(
